@@ -35,11 +35,14 @@ helm install <name-of-repo> <path-to-helm-manifests>
 - 2 browser screenshots of both applications
 - Screenshot of my terminal showing all the kubenetes objects created to support these apps
 
-## Tools used
+### Tools used
 - Helm (Package manager for kubernetes which was used to create and deploy the applications)
 - Git - To commit and push to SCM (Github)
 - NGINX ingress
 - AWS ( Route 53, EC2, VPC, SGs, EKS)
+
+### Note
+- The video will have to be downloaded on your local machine (View raw) as the file size is too big to view on the Github console
 
 
 
