@@ -1,7 +1,7 @@
 ## Everly Health Demo
 
 ### Key Points
-- The kubernestes cluster is created in AWS using the eksctl command. Thsi command creates all the necessary networking components (VPC, Suibnets, IGW etc), EKS Cluster, Node group and IAM roles required to create a full clsuter
+- The kubernestes cluster is created in AWS using the eksctl command. This command creates all the necessary networking components (VPC, Suibnets, IGW etc), EKS Cluster, Node group and IAM roles required to create a full clsuter. The ideal and recommended method will utilize IAC ( preferrably Terraform) to deploy the AWS infrastrucutre
 ```
 eksctl create cluster \
   --name DEMO-CLUSTER \
@@ -9,7 +9,7 @@ eksctl create cluster \
   --nodes 2 \
   --node-type t2.large
 ```
-- A real domain name (with an A record - demo.ebuka.io) is used for the inggress controller. This domain was created and is being hosted in Route 53
+- A real domain name (with an A record - demo.ebuka.io) is used for the ingress controller. This domain was created and is being hosted in Route 53
 - The Cluster has two applications (microservices) running on it. everly-app and everly-app-2
 ```
 helm create <name-of-app>
@@ -32,7 +32,7 @@ helm install <name-of-repo> <path-to-helm-manifests>
 
 ### Video and Screenshot
 - A 15 - 20 sec video showing the logs of the ingress controller as the application (both) is accessed from a chrome browser
-- 2 browser screenshotss of both applications
+- 2 browser screenshots of both applications
 - Scrrenshot of my terminal showing all the kubenetes objects created to support these apps
 
 
