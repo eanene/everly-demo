@@ -31,9 +31,15 @@ helm install <name-of-repo> <path-to-helm-manifests>
 
 
 ### Video and Screenshot
-- A 15 - 20 sec video showing the logs of the ingress controller as the application (both) is accessed from a chrome browser
+- A 50 seconds video showing the logs of the ingress controller as the application (both) is accessed from a chrome browser
 - 2 browser screenshots of both applications
-- Scrrenshot of my terminal showing all the kubenetes objects created to support these apps
+- Screenshot of my terminal showing all the kubenetes objects created to support these apps
+
+## Tools used
+- Helm (Package manager for kubernetes which was used to create and deploy the applications)
+- Git - To commit and push to SCM (Github)
+- NGINX ingress
+- AWS ( Route 53, EC2, VPC, SGs, EKS)
 
 
 
