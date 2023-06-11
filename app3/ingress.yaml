@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: everly-app-3
+  labels:
+    app: everly-app-3
+  # annotations:
+  #   nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: demo.ebuka.io
+    http:
+      paths:
+      - path: /app-3
+        pathType: Prefix
+        backend:
+          service:
+            name: everly-app-3
+            port:
+              number: 80

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: everly-app-3
+spec:
+  selector:
+    matchLabels:
+      app: everly-app-3
+  template:
+    metadata:
+      labels:
+        app: everly-app-3
+    spec:
+      containers:
+      - name: everly-app-3
+        image: yeasy/simple-web:latest  #Random image from docakerhub
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
