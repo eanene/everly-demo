@@ -13,7 +13,7 @@ spec:
   - host: demo.ebuka.io
     http:
       paths:
-      - path: /app-3
+      - path: /
         pathType: Prefix
         backend:
           service:
