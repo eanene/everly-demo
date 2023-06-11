@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: everly-app-3
-        image: yeasy/simple-web:latest  #Random image from docakerhub
+        image: nginx # yeasy/simple-web:latest  #Random image from docakerhub
         resources:
           limits:
             memory: "128Mi"
